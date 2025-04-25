@@ -147,7 +147,7 @@ function TodoList() {
     };
 
     return (
-        <div className='bg-black text-white mt-8 w-full min-h-screen p-4 md:p-6'>
+        <div className='bg-black text-white mt-12 w-full min-h-screen p-4 md:p-6'>
             <div className="max-w-4xl mx-auto">
                 <div className="flex justify-between items-center mb-6">
                     <h1 className="text-2xl font-bold">Task Manager</h1>
