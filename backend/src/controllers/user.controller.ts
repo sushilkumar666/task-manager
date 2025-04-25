@@ -60,8 +60,9 @@ const login = async (req: Request, res: Response): Promise<any> => {
         // });
         res.cookie("accessToken", accessToken, {
             httpOnly: true,
-            sameSite: "lax",
-            secure: process.env.NODE_ENV === "production", // only true in prod
+            secure: true,
+            sameSite: 'none',
+            maxAge: 24 * 60 * 60 * 1000
         });
 
         res.status(200).json({
