@@ -10,7 +10,7 @@ const app = express();
 app.use(cors({
     origin: ['https://task-manager-ashy-five-22.vercel.app', 'http://localhost:5173'], // allowed origins
     credentials: true, // Allow credentials (cookies, authorization headers)
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow specific methods
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], // Allow specific methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
 }));
 
