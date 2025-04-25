@@ -219,7 +219,7 @@ function Signin() {
                     </div>
                 </form>
                 <div> email: test1@gmail.com  <br /> password : 12345678</div>
-                <div>or you can create new email and signin</div>
+                <div>or you can create new account by signup and then signin</div>
             </div>
         </div>
     );
