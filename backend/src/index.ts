@@ -9,7 +9,7 @@ import cookieParser from 'cookie-parser';
 const app = express();
 app.use(cors(
     {
-        origin: "http://localhost:5173", // frontend ka exact URL
+        origin: ["https://task-manager-58a1.onrender.com", "http://localhost:5173"], // frontend ka exact URL
         credentials: true,
     }
 ));

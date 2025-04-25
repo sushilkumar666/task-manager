@@ -56,8 +56,7 @@ const login = async (req: Request, res: Response): Promise<any> => {
 
         res.cookie("accessToken", accessToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production", // only HTTPS in prod
-            sameSite: "lax",
+            sameSite: "none",
         });
 
         res.status(200).json({
