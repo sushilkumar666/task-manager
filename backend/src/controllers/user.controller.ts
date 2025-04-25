@@ -54,9 +54,14 @@ const login = async (req: Request, res: Response): Promise<any> => {
             { expiresIn: "2h" }
         );
 
+        // res.cookie("accessToken", accessToken, {
+        //     httpOnly: true,
+        //     sameSite: "none",
+        // });
         res.cookie("accessToken", accessToken, {
             httpOnly: true,
-            sameSite: "none",
+            sameSite: "lax",
+            secure: process.env.NODE_ENV === "production", // only true in prod
         });
 
         res.status(200).json({
