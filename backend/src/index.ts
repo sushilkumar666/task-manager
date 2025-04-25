@@ -7,12 +7,15 @@ import todoRoutes from './routes/task.route'
 import cookieParser from 'cookie-parser';
 
 const app = express();
-app.use(cors(
-    {
-        origin: ["https://task-manager-58a1.onrender.com", "http://localhost:5173"], // frontend ka exact URL
-        credentials: true,
-    }
-));
+app.use(cors({
+    origin: ['https://task-manager-58a1.onrender.com', 'http://localhost:5173'], // allowed origins
+    credentials: true, // Allow credentials (cookies, authorization headers)
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow specific methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+}));
+
+// If preflight request not handled automatically, manually handle OPTIONS request:
+app.options('*', cors());
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
