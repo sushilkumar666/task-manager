@@ -136,4 +136,4 @@ POST /api/auth/login
 
 ## 📬 Contact
 
-Made with 💻 by sushilkumar (https://github.com/sushilkumar666). Feel free to fork, star, and raise issues.
+Made with 💻 by sushilkumar (https://github.com/sushilkumar666/task-manager). Feel free to fork, star, and raise issues.
