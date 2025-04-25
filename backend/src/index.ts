@@ -15,7 +15,6 @@ app.use(cors({
 }));
 
 // If preflight request not handled automatically, manually handle OPTIONS request:
-app.options('*', cors());
 app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
