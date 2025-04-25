@@ -84,6 +84,7 @@ function Signin() {
 
         try {
             const { data } = await axios.post(`${BACKEND_URL}/api/auth/login`, formData, { withCredentials: true });
+            console.log(JSON.stringify(data) + " i am data from sigin")
             if (data.success) {
                 login(data.user.name);
                 navigate('/');

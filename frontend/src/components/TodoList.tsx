@@ -39,6 +39,8 @@ function TodoList() {
                 dueDate
             }, { withCredentials: true });
 
+            console.log(data);
+
             setTodos(todos.map(todo =>
                 todo._id === editingId ? { ...todo, title: inputValue, description: inputDesc, status, dueDate } : todo
             ));

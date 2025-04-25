@@ -14,7 +14,7 @@ const userContext = createContext<IUserContext | null>(null);
 function UserProvider({ children }: { children: ReactNode }) {
     const [user, setUser] = useState("");
     const authenticated = Boolean(user);
-    const login = (username: string) => {
+    const login = async (username: string) => {
         localStorage.setItem('user', username);
         setUser(username)
     }
