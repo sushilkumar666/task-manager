@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build directories
+/dist
+/build
+
+# .env files (to keep sensitive info secret)
+.env
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE config files
+.idea/
+.vscode/
+
+# Tailwind CSS JIT cache
+/.turbo
