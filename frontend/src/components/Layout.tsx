@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react'
 import { Outlet } from 'react-router-dom'
 import { useAuth } from '../context/UserProvider'
 import Header from './Header';
