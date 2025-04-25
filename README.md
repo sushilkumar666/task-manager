@@ -93,8 +93,8 @@ npm run dev
 ```json
 POST /api/auth/login
 {
-  "email": "user@example.com",
-  "password": "securepassword"
+  "email": "test1@gmail.com",
+  "password": "12345678"
 }
 ```
 
@@ -103,8 +103,8 @@ POST /api/auth/login
 {
   "success": true,
   "user": {
-    "name": "John Doe",
-    "email": "user@example.com"
+    "name": "test1",
+    "email": "test1@gmail.com"
   }
 }
 ```
